@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "my-web-app-image"
+        DOCKER_IMAGE = "my-nginx-image"
         DOCKER_CONTAINER = "my-web-app-container"
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/yourusername/my-web-app.git'
+                git 'https://github.com/ajit010/ci-cd-pipeline.git'
             }
         }
 

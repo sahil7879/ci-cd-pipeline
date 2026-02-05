@@ -36,7 +36,7 @@ pipeline {
             steps {
                 script {
                     // Run a new container from the image
-                    sh 'docker run -d -p 80:80 --name $DOCKER_CONTAINER $DOCKER_IMAGE'
+                    sh 'docker run -d -p 8082:80 --name $DOCKER_CONTAINER $DOCKER_IMAGE'
                 }
             }
         }
